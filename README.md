@@ -1,4 +1,4 @@
-# Media (Barry Pack)
+# Media (Barry bag)
 
 View and inspect local image, video, and audio files.
 
