@@ -1,7 +1,2 @@
 name: media
 description: Image and video info and manipulation
-
-tools:
-  entry: tools.ts
-  env:
-    - GIPHY_API_KEY
