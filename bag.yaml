@@ -1,2 +1,32 @@
 name: media
-description: Image and video info and manipulation
+description: Inspect and view media; identify and convert images, video, audio, documents and PDFs
+
+traits:
+  file-conversion:
+    description: Identify and convert files between formats
+    access: readwrite
+    namespaces: [filetype]
+
+dependencies:
+  magick:
+    reason: image conversion for everything except heic/avif/jxl
+    install:
+      macos: brew install imagemagick
+  sips:
+    reason: reads heic/avif/jxl, which ImageMagick cannot (ships with macOS)
+  ffmpeg:
+    reason: audio and video transcoding
+    install:
+      macos: brew install ffmpeg
+  pandoc:
+    reason: document conversion between docx/odt/html/rst/epub/markdown
+    install:
+      macos: brew install pandoc
+  soffice:
+    reason: converts office formats to PDF
+    install:
+      macos: brew install --cask libreoffice
+  pdftoppm:
+    reason: rasterizes PDF pages, and pdftotext extracts their text layer
+    install:
+      macos: brew install poppler

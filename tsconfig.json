@@ -8,6 +8,12 @@
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["*.ts", "src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "*.ts",
+    "src/**/*.ts",
+    "filetype/src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
