@@ -1,12 +1,6 @@
 name: media
 description: Inspect and view media; identify and convert images, video, audio, documents and PDFs
 
-traits:
-  file-conversion:
-    description: Identify and convert files between formats
-    access: readwrite
-    namespaces: [filetype]
-
 dependencies:
   magick:
     reason: image conversion for everything except heic/avif/jxl
